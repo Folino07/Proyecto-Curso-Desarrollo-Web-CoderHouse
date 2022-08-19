@@ -33,6 +33,7 @@ header{
     justify-content: left;
 }
    
+
 /*estilos del menu*/
 ul {
     margin-top: 25px;
@@ -91,7 +92,7 @@ article{
 #launo{
     padding: 2px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; 
 }
 
 .imagen-uno{
@@ -326,7 +327,7 @@ footer{
         #lados{
             position: relative;
             margin-top: -60px;
-
+            transform: rotate(360deg);
         }
 
         .texto-4{
@@ -384,3 +385,21 @@ footer{
         }
         
       }
+
+
+     #launo {
+        animation-duration: 5s;
+        animation-name: aparecer;
+        animation-iteration-count:initial;
+     }
+     
+     
+     @keyframes aparecer {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 10;
+        }
+     }
+     
