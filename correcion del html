@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <!--  -->
+
+    <div id="grilla">
+
+        <header class="index">
+            <img class="logo" src="Images/My project.png" alt="logomania">
+        </header>
+
+    
+        <nav class="menu">
+            <ul>
+                <li> <a href="index.html"><b>Inicio</b></a></li>
+
+                <li> <a href="./pages/mision.html"><b>Mision</b></a></li>
+
+                <li><a href="./pages/redes.html"><b>Redes</b></a> </li>
+
+                <li> <a href="./pages/promo.html"><b>Promos</b></a> </li>
+
+                <li><a href="./pages/contacto.html"><b>Contacto</b></a> </li>
+            </ul>
+        </nav>
+    
+
+        <section id="launo">
+            <img class="imagen-uno" src="Images/promocion-1.jpg" alt="">
+        </section>
+
+
+        <section id="lados">
+            <article class="text">
+                <p class="colorcito"> <b>
+                        <p> <b> QUIENES SOMOS? dolor sit amet consectetur adipisicing elit. Perferendis rerum
+                                cupiditate, esse voluptates numquam, assumenda atque minus sunt excepturi magnam
+                                laudantium.
+                                Repellendus, dicta voluptatem. Quod corrupti vel natus eos consectetur. Lorem ipsum
+                                dolor sit
+                                amet consectetur adipisicing elit. Delectus doloremque exercitationem perspiciatis
+                                incidunt eius
+                                officiis cum, consequatur corrupti, sunt odio similique architecto nihil perferendis
+                                modi!
+                                Similique nam ad officiis et.lorem ipsum
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quos laudantium
+                                dolorum
+                                repellat eveniet, blanditiis ipsum error officiis commodi repellendus reiciendis odit
+                                maiores
+                                labore rerum ab sunt, impedit voluptate libero. Lorem, ipsum.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis rerum cupiditate,
+                                esse
+                                voluptates numquam, assumenda atque minus sunt excepturi magnam laudantium. Repellendus,
+                                dicta
+                                voluptatem. Quod corrupti vel natus eos consectetur. Lorem ipsum dolor sit amet
+                                consectetur
+                                adipisicing elit. Delectus doloremque exercitationem perspiciatis incidunt eius officiis
+                                cum,
+                                consequatur corrupti, sunt odio similique architecto nihil perferendis modi! Similique
+                                nam ad
+                                officiis et.lorem ipsum
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quos laudantium
+                                dolorum
+                                repellat eveniet, blanditiis ipsum error officiis commodi repellendus reiciendis odit
+                                maiores
+                                labore rerum ab sunt, impedit voluptate libero. Lorem, ipsum.
+                                um dolor, sit amet consectetur adipisicing elit. Suscipit quos laudantium dolorum
+                                repellat
+                                eveniet, blanditiis ipsum error officiis commodi repellendus reiciendis odit maiores
+                                labore
+                                rerum ab sunt, impedit voluptate libero. Lorem, ipsum.
+                            </b> </p>
+                        <br>
+                        <p>
+                        HISTORIA: A medida que el grano es calentado más allá del punto de ebullición del agua (100 °C),
+                        hasta los 175 °C, la humedad dentro del grano empieza a convertirse en vapor, generando
+                        presiones internas de hasta unas 9 atmósferas. En la mayoría de los granos (incluyendo los
+                        granos defectuosos del maíz para palomitas), este vapor escapa tan rápido como se forma, pero en
+                        los granos del maíz para palomitas, el vapor no escapa debido a lo grueso e impermeable del
+                        pericarpio (corteza) que lo mantiene sellado, pero la presión interna llega a tal punto que la
+                        corteza no puede contenerla y ocurre una pequeña explosión. La fuerza de la explosión voltea al
+                        grano de adentro hacia fuera, es decir el contenido del núcleo es expuesto. Pero aún más
+                        importante, debido a que la humedad se encontraba uniformemente distribuida dentro del núcleo
+                        almidonado, la expansión repentina de la explosión convierte el endospermo en una especie de
+                        espuma, la cual le da a las palomitas su textura única.
+                    </p>
+                        
+                    </b> </p>
+
+            </article>
+        </section>
+
+        <footer>
+            <p><b> -Pagina creada por @JulianFolino- </b></p>
+        </footer>
+
+</body>
+
+</html>
