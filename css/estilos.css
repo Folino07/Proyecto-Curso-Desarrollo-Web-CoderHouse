@@ -31,328 +31,475 @@ footer {
 
   /*hasta aqui la implementacion del sass para el index*/
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Smooch&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Smooch&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
 
 *{
     margin: 0;
     padding: 0;
 }
-
-
-
-/* color parrafo*/
-p{
-    color: black;
+body{
+    background-image: url('https://img.freepik.com/foto-gratis/bolsa-papel-alimentos_76263-1478.jpg?size=626&ext=jpg');
+    background-position: center center;
+   background-size: cover ;
+   background-repeat: no-repeat;
+   font-family: roboto,sans-serif;
 }
- 
-/*estilo header*/
-header{
-    position: relative;
-    margin-top: -25px;
+
+.logo{
+
 }
 
 
-/*estilos del texto*/
-.texto{
-    text-align: center;
-}
-
-.text{
-    margin-top: 10px;
-    text-align: center;
-    margin-right: 10px;
-    margin-left: 10px;
-    justify-content: center;
-}
-
-
-
-
-
-/*estilos de los parrafos del index*/
-#launo{
-    padding: 2px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.imagen-uno{
-    width: 100%;
-    height: 100%;
-}
-
-/*estilos footer*/
-footer{
-    text-align: center;
-    background-color: #cbdbe9;
-}
-
-
-/*imagen de promocion, que luego se le agregaran 2 mas para hacer un carrousel*/
-.imagen-promo{
-    align-content: center;
-    width: 98%;
-    height: 400px;
-}
-
-
-
-.articulo{
+/*estilos del menu*/
+ul {
+    margin-top: 25px;
     display: flex;  
     flex-direction: row; 
-   justify-content: center;
-   flex-flow:wrap;
-}
-
-#imagenes-galeria{
-    width: 345px;
-    height: 345px;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    padding: 2px;
-}
-
-#imagenes-galeria2{
-    width: 345px;
-    height: 345px;
-    display: flex;
-    flex-direction: row;
-    justify-content:left;
-    padding: 2px;
-}
-
-.texto{
-    margin: 10px;
+   align-content: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   font-size: 22px;
+  }
+  
+  li {
     text-align: center;
+   padding: 5px 5px 5px 5px;
+    width: 5em;
+    display: inline;
+    margin:5px 5px 5px 5px ;
+    font-size: 22px;
+  }
+
+
+ ul li a{
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul :hover{
+  text-decoration: none;
+  border-radius: 70%;
+  background-color: rgb(76, 206, 50);
+}
+
+header{
+    text-align: center;
+    align-content: center;
     justify-content: center;
-    
 }
 
-/*Ancho y alto de img de mision*/
-.imagenes-mision{
-    width: 320px;
-    height: 320px;
+.logo{
+  width: 80%;
+  height: 80%;
 }
 
 
-.parrafitos{
-    margin: 10px;
+
+#navbarNav{
+  position: relative;
+  margin-left: -30px;
+  font-weight: bold;
 }
 
-#imagenes-redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+
+footer{
+    text-align: center;
+    background-color: rgb(76, 206, 50);
+    position: relative;
+    margin-bottom: -10px;
+}
+
+.lalucha{
+   margin: 10px;
+   display: flex;  
+    flex-direction: row; 
+   align-content: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.texto-1{
+  display: flex;  
+    flex-direction: row; 
+   align-content: center;
+   position: relative;
+  margin: 20px 45px 20px 45px;
 }
 
 .texto-4{
-    margin-top: 35px;
+  display: flex;  
+    flex-direction: row; 
+   align-content: center;
+   position: relative;
+  margin: -20px 45px -100px 45px;
+}
+
+/*----  Main Style  ----*/
+#cards_landscape_wrap-2{
     text-align: center;
+    align-content: center;
+    justify-content: center;
+    
+  }
+  #cards_landscape_wrap-2 .container{
+    padding-top: 80px; 
+    padding-bottom: 100px;
+  }
+  #cards_landscape_wrap-2 a{
+    text-decoration: none;
+    outline: none;
+  }
+  #cards_landscape_wrap-2 .card-flyer {
+    border-radius: 5px;
+  }
+  #cards_landscape_wrap-2 .card-flyer .image-box{
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+  }
+  #cards_landscape_wrap-2 .card-flyer .image-box img{
+    -webkit-transition:all .9s ease; 
+    -moz-transition:all .9s ease; 
+    -o-transition:all .9s ease;
+    -ms-transition:all .9s ease; 
+    width: 100%;
+    height: 200px;
+  }
+  #cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+    opacity: 0.7;
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding: 30px 18px;
+    
+  }
+  #cards_landscape_wrap-2 .card-flyer{
+    background: #FFFFFF;
+    margin-top: 50px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+  }
+  #cards_landscape_wrap-2 .card-flyer:hover{
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-top: 50px;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px; 
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000000;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box h6{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 4px; 
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Black', sans-serif;
+    letter-spacing: 1px;
+    color: #00acc1;
+  }
+
+.text-container{
+  text-align: center;
+    align-content: center;
+    justify-content: center;
 }
 
-#imagenes-descuentos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-
-.subimagenes-descuentos{
-    height: 350px;
-    width: 350px;
-    margin-top: 30px;
-    margin-bottom: 80px;
+#grid{
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows:1fr;
+  grid-template-areas:
+  "mapa formulario"
 }
 
 
 .mapa{
-    margin: 10px;
+  grid-area: mapa;
 }
 
 .formulario{
-    margin: 10px;
-    position: relative;
-    margin-top: -400px;
-    margin-left: 950px;
-    margin-bottom: 80px;
-    text-align: center;
-    display: flex;  
+grid-area: formulario;
 }
 
 
-
-
-.logo-mision{
- display: flex;
- flex-direction: row;
- justify-content: left;
+.texto{
+    margin: 0px 15px 0px 15px;
 }
 
-#menu-mision{
-display: flex;
- flex-direction: row;
- justify-content: right;
- align-content: space-between;
-}
-
-/*grid del index*/
-#grilla {
-    display: grid;
-    grid-template-areas:
-      "header header nav  nav"
-      "section section section section"
-      "section2 section2 section2 section2"
-      "footer footer footer footer";
-    grid-template-rows: 12% 48% 38% 2%; 
-    grid-template-columns:25% 25% 25% 25%;
-   height: 140vh;
-   grid-row-gap: 5px;
-   margin: 0;	 
- }
- 
- header {
-    grid-area: header;
-}
-
-nav {
-    grid-area: nav;
- }
-
- section#launo {
-    grid-area: section; 
-    }
-
-    section#lados {
-        grid-area: section2; 
-        }
-
-
- footer {
-    grid-area: footer;
- }
-
-
-
-/*Grid de la page Mision*/
-#imagenes-mision-grid{
-    margin-top: 15px;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 12% 38% 48% 2%;
-    grid-template-areas:
-    "header header nav nav"
-    "texto texto texto texto"
-    "imagen1 imagen2 imagen3 imagen4"
-    "footer footer footer footer"
-}     
-
-
-header{
-    grid-area: header;
-}
-
-.texto-4{
-    grid-area: texto;
-}
-
-.imagen-mision1{
-grid-area: imagen1;
-}
-
-.imagen-mision2{
-    grid-area: imagen2;
-}
-
-.imagen-mision3{
-    grid-area: imagen3;
-}
-
-.imagen-mision4{
-    grid-area: imagen4; 
-}
-
-footer{
-    grid-area: footer;
+.btn{
+  background-color: rgb(76, 206, 50);
 }
 
 
+#grid2{
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows:1fr 1fr;
+  grid-template-areas:
+  "card1 card2 card3 card4"
+  "card5 card6 card7 card8"
+}
 
 
+.card1{
+  grid-area: card1;
+  margin: 5px;
+}
+
+.card2{
+  grid-area: card2;
+  margin: 5px;
+}
+
+.card3{
+  grid-area: card3;
+  margin: 5px;
+}
+
+.card4{
+  grid-area: card4;
+  margin: 5px;
+}
+
+.card5{
+  grid-area: card5;
+  margin: 5px;
+}
+
+.card6{
+  grid-area: card6;
+  margin: 5px;
+}
+
+.card7{
+  grid-area: card7;
+  margin: 5px;
+}
+
+.card8{
+  grid-area: card8;
+  margin: 5px;
+}
+
+
+.articulo{
+  display: flex;  
+  flex-direction: row; 
+ justify-content: center;
+}
+
+#redes{
+  display: flex;  
+    flex-direction: row; 
+   justify-content: center;
+}
+
+.articulo2{
+  display: flex;  
+  flex-direction: row; 
+ justify-content: center;
+ margin-top: 30px;
+}
+
+.cards-promo{
+  position: relative;
+  margin-top: -80px;
+}
+
+.bold{
+  font-weight: bold;
+}
 
     /*media queries*/
 
-@media only screen and (min-width: 380px) {
-        p {
-          font-size: 10px;
-        }
-
-        li{
-            font-size: 10px;
-        }
-
-        .imagen-uno{
-            height: 350px;
-        }
-
-        #lados{
-            position: relative;
-            margin-top: -60px;
-
-        }
-
-        .texto-4{
-            position: relative;
-            margin-top: 70px;
-        }
-
-        .imagenes-mision{
-            height: 130px;
-            width: 130px;
-            position: relative;
-            margin-top: 30px;
-        }
+    @media only screen and (min-width: 480px) {
+      #grid{
+        margin: 15px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:1fr 1fr;
+        grid-template-areas:
+        "mapa"
+        "formulario"
+      }
+      
+      
+      .mapa{
+        grid-area: mapa;
+        margin-right: 5px;
+      }
+      
+      .formulario{
+      grid-area: formulario;
       }
 
-      
+    
+      iframe{
+        width: 90%;
+      }
+    }
+
+    
 
 @media only screen and (min-width: 649px) {
-        p {
-          font-size: 10px;
-        }
+  #grid{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas:
+    "mapa"
+    "formulario"
+  }
+  
+  
+  .mapa{
+    grid-area: mapa;
+    margin-right: 10px;
+  }
+  
+  .formulario{
+  grid-area: formulario;
+  }
 
-        li{
-            font-size: 10px;
-        }
+  iframe{
+    width: 100%;
+  }
+    }
 
-        .texto-4{
-            position: relative;
-            margin-top: 70px;
-            margin-bottom: 50px;
-        }
-
-        .imagenes-mision{
-            height: 160px;
-            width: 160px;
-            position: relative;
-            margin-top: -10px;
-        }
-
-        
-      }
-
-      
     
-      @media screen and (min-width: 950px) {
-        p {
-          font-size: 14px;
-        }
-
-        .imagenes-mision{
-            height: 250px;
-            width: 250px;
-            position: relative;
-            margin-top: -80px;
-        }
-        
+  
+    @media screen and (min-width: 1200px) {
+      #grid{
+        margin: 15px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows:1fr;
+        grid-template-areas:
+        "mapa formulario"
       }
+      
+      
+      .mapa{
+        grid-area: mapa;
+        margin-right: 10px;
+      }
+      
+      .formulario{
+      grid-area: formulario;
+      }
+
+      iframe{
+        width: 100%;
+        margin-right: 10px;
+      }
+    }
+
+
+
+
+
+/*media queries*/
+@media only screen and (min-width: 400px) {
+  #grid2{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8"
+  }
+  
+}
+
+@media only screen and (min-width: 600px) {
+  #grid2{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "card1 card2"
+    "card3 card4"
+    "card5 card6"
+    "card7 card8"
+  }
+  
+}
+
+
+
+    @media only screen and (min-width: 850px) {
+      #grid2{
+        margin: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr;
+        grid-template-areas:
+        "card1 card2 card3"
+        "card4 card5 card6"
+        "card7 card8 card8" 
+      }
+      
+        }
+    
+        
+      
+        @media screen and (min-width: 1200px) {
+          #grid2{
+            margin: 15px;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows:1fr 1fr;
+            grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8"
+          }
+          
+        }
