@@ -1,4 +1,3 @@
-/*Implementacion del sass para el Index*/
 body {
   background-image: url("https://img.freepik.com/foto-gratis/bolsa-papel-alimentos_76263-1478.jpg?size=626&ext=jpg");
   background-position: center center;
@@ -19,9 +18,14 @@ nav ul {
         border-radius: 70%;
         background-color: #4cce32; }
 
-article {
+.articulo, article {
   margin: 15px;
-  color: black; }
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: grey; }
+
+article {
+  color: #240e0e; }
 
 footer {
   text-align: center;
@@ -29,63 +33,21 @@ footer {
   position: relative;
   margin-bottom: -10px; }
 
-  /*hasta aqui la implementacion del sass para el index*/
+  /*reseteo de estilos grales de las paginas*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
 
+  /*estilos generales para los footers*/
+footer {
+  text-align: center;
+  background-color: #4cce32;
+  position: relative;
+  margin-bottom: -10px; }
 
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Smooch&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Smooch&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-image: url('https://img.freepik.com/foto-gratis/bolsa-papel-alimentos_76263-1478.jpg?size=626&ext=jpg');
-    background-position: center center;
-   background-size: cover ;
-   background-repeat: no-repeat;
-   font-family: roboto,sans-serif;
-}
-
-.logo{
-
-}
-
-
-/*estilos del menu*/
-ul {
-    margin-top: 25px;
-    display: flex;  
-    flex-direction: row; 
-   align-content: center;
-   justify-content: space-around;
-   flex-wrap: wrap;
-   font-size: 22px;
-  }
-  
-  li {
-    text-align: center;
-   padding: 5px 5px 5px 5px;
-    width: 5em;
-    display: inline;
-    margin:5px 5px 5px 5px ;
-    font-size: 22px;
-  }
-
-
- ul li a{
-    font-size: 22px;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-ul :hover{
-  text-decoration: none;
-  border-radius: 70%;
-  background-color: rgb(76, 206, 50);
-}
 
 header{
     text-align: center;
@@ -93,12 +55,16 @@ header{
     justify-content: center;
 }
 
+/*tamano logo*/
 .logo{
   width: 80%;
   height: 80%;
 }
 
-
+/*estilos de textos en negritas*/
+.bold{
+  font-weight: bold;
+}
 
 #navbarNav{
   position: relative;
@@ -106,32 +72,16 @@ header{
   font-weight: bold;
 }
 
-
-
-footer{
-    text-align: center;
-    background-color: rgb(76, 206, 50);
-    position: relative;
-    margin-bottom: -10px;
-}
-
-.lalucha{
-   margin: 10px;
-   display: flex;  
-    flex-direction: row; 
-   align-content: center;
-   justify-content: space-around;
-   flex-wrap: wrap;
-}
-
-.texto-1{
+.titulo-mision{
   display: flex;  
     flex-direction: row; 
    align-content: center;
-   position: relative;
-  margin: 20px 45px 20px 45px;
+   justify-content: center;
+   margin-bottom: 15px;
+   color: red;
 }
 
+/*estilos texto mision*/
 .texto-4{
   display: flex;  
     flex-direction: row; 
@@ -140,7 +90,7 @@ footer{
   margin: -20px 45px -100px 45px;
 }
 
-/*----  Main Style  ----*/
+/*---- Estilo de las cards ----*/
 #cards_landscape_wrap-2{
     text-align: center;
     align-content: center;
@@ -234,13 +184,26 @@ footer{
     color: #00acc1;
   }
 
+  /*estilos titulo redes*/
+  .titulo-redes{
+    display: flex;  
+      flex-direction: row; 
+     align-content: center;
+     justify-content: center;
+     position: relative;
+     margin-bottom: -30px;
+     color: red;
+  }
+  
+
+  /*estilos textos cards de page promo*/
 .text-container{
   text-align: center;
     align-content: center;
     justify-content: center;
 }
 
-
+/*grid de la page Contacto*/
 #grid{
   margin: 15px;
   display: grid;
@@ -268,9 +231,9 @@ grid-area: formulario;
   background-color: rgb(76, 206, 50);
 }
 
-
+/*grid de la page Redes*/
 #grid2{
-  margin: 15px;
+  margin: 0px 15px 15px 15px;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows:1fr 1fr;
@@ -321,10 +284,11 @@ grid-area: formulario;
 }
 
 
-.articulo{
+.articulo2{
   display: flex;  
   flex-direction: row; 
  justify-content: center;
+ margin: 0px 15px 0px 15px;
 }
 
 #redes{
@@ -345,11 +309,9 @@ grid-area: formulario;
   margin-top: -80px;
 }
 
-.bold{
-  font-weight: bold;
-}
 
-    /*media queries*/
+
+    /*media queries page Contacto*/
 
     @media only screen and (min-width: 480px) {
       #grid{
@@ -438,10 +400,10 @@ grid-area: formulario;
 
 
 
-/*media queries*/
+/*media queries page Redes*/
 @media only screen and (min-width: 400px) {
   #grid2{
-    margin: 15px;
+    margin: 0px 15px 15px 15px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -460,7 +422,7 @@ grid-area: formulario;
 
 @media only screen and (min-width: 600px) {
   #grid2{
-    margin: 15px;
+    margin: 0px 15px 15px 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows:1fr 1fr 1fr 1fr;
@@ -477,7 +439,7 @@ grid-area: formulario;
 
     @media only screen and (min-width: 850px) {
       #grid2{
-        margin: 15px;
+        margin: 0px 15px 15px 15px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows:1fr 1fr 1fr;
@@ -493,7 +455,7 @@ grid-area: formulario;
       
         @media screen and (min-width: 1200px) {
           #grid2{
-            margin: 15px;
+            margin: 0px 15px 15px 15px;
             display: grid;
             grid-template-columns: 25% 25% 25% 25%;
             grid-template-rows:1fr 1fr;
