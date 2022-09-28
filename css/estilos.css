@@ -197,6 +197,7 @@ footer {
     }
 
     /*grid de la page Mision*/
+    /*
   #grid1{
     display: grid;
     flex-direction: row;
@@ -232,7 +233,7 @@ footer {
     margin: 10px;
   }
 
-    
+    */
   
     /*estilos textos cards de page promo*/
   .text-container{
@@ -359,6 +360,12 @@ footer {
   }
   
   
+#gride{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
  .container{
   margin: 0px 100px 0px 100px;
   padding:0px 100px 0px 100px;
@@ -582,6 +589,7 @@ footer {
     #grid1{
       display: grid;
       flex-direction: row;
+      margin-right: 20px;
       grid-template-columns: 1fr;
       grid-template-rows:1fr 1fr 1fr 1fr;
       grid-template-areas:
