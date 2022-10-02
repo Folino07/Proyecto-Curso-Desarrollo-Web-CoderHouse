@@ -1,0 +1,95 @@
+/*grid de la page contacto*/
+#grid{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:1fr;
+    grid-template-areas:
+    "mapa formulario"
+  }
+  
+  
+  .mapa{
+    grid-area: mapa;
+    padding-right: 10px;
+  }
+  
+  .formulario{
+  grid-area: formulario;
+  }
+
+  /*grid de la page Redes*/
+  #grid2{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8"
+  }
+  
+  
+
+  .card1{
+    grid-area: card1;
+    border: 1.5px solid map-get($colores , "negro" );
+    border-radius: 5px;
+    margin: $margen-popu;
+    
+  }
+  
+  .card2{
+    grid-area: card2;
+    border: 1.5px solid map-get($colores , "negro" );
+    border-radius: 5px;
+    margin: $margen-popu;
+  }
+  
+  .card3{
+    grid-area: card3;
+    border: 1.5px solid map-get($colores , "negro" );
+    border-radius: 5px;
+    margin: $margen-popu;
+  }
+  
+  .card4{
+    grid-area: card4;
+    border: 1.5px solid map-get($colores , "negro" );
+    border-radius: 5px;
+    margin: $margen-popu;
+  }
+
+  .card5{
+    grid-area: card5;
+    border: 1.5px solid map-get($colores , "negro" );
+    border-radius: 5px;
+    margin: $margen-popu;
+  }
+
+  .card6{
+    grid-area: card6;
+    border: 1.5px solid map-get($colores , "negro" );
+    border-radius: 5px;
+    margin: $margen-popu;
+  }
+
+  .card7{
+    grid-area: card7;
+    border: 1.5px solid map-get($colores , "negro" );
+    border-radius: 5px;
+    margin: $margen-popu;
+  }
+
+  .card8{
+    grid-area: card8;
+    border: 1.5px solid map-get($colores , "negro" );
+    border-radius: ($margen-popu/2);
+    margin: $margen-popu;
+  }

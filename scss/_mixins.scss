@@ -3,3 +3,14 @@
     padding: 0%;
     box-sizing: border-box;
 }
+
+@mixin flex-row-center {
+	display:flex;
+	flex-direction:row;
+	align-content:center;
+}
+
+@mixin flex-col{
+    display: flex;
+  flex-direction: column;
+}

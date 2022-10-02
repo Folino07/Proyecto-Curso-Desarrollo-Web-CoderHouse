@@ -1,0 +1,28 @@
+/*estilos gral de los headers*/
+header{
+    nav{
+        .logo{
+            width: $porcentaje-logo;
+            height: $porcentaje-logo;
+        }
+        #navbarNav{
+            font-weight: bold;
+        }
+        ul{
+            text-align: center;
+            font-size: ($font-menu*2);
+            li{
+                display: inline-block;
+                margin: 5px;
+                a{
+                    color: map-get($colores , "negro" );
+                    &:hover{
+                        text-decoration: none;
+                        border-radius: 70%;
+                        background-color: $color-famoso;
+                    }
+                }
+            }  
+        }
+    }
+}

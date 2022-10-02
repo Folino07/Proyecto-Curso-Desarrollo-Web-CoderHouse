@@ -1,3 +1,4 @@
+/*estilos grales del body*/
 body {
   background-image: url(../images/ama-pastel.jpg);
   background-position: center center;
@@ -5,699 +6,318 @@ body {
   background-repeat: no-repeat;
   font-family: roboto,sans-serif; }
 
-nav ul {
+/*estilos gral de los headers*/
+header nav .logo {
+  width: 80%;
+  height: 80%; }
+
+header nav #navbarNav {
+  font-weight: bold; }
+
+header nav ul {
   text-align: center;
   font-size: 22px; }
-  nav ul li {
+  header nav ul li {
     display: inline-block;
     margin: 5px; }
-    nav ul li a {
-      color: #f9fd00; }
-      nav ul li a:hover {
+    header nav ul li a {
+      color: black; }
+      header nav ul li a:hover {
         text-decoration: none;
         border-radius: 70%;
-        background-color: #958d03;
-        color: #fff; }
+        background-color: #4cce32; }
 
+footer {
+  text-align: center;
+  background-color: #4cce32;
+  position: relative;
+  margin-bottom: -15px; }
+
+/*estilos texto del index*/
 article {
   margin: 15px;
   color: black; }
 
-footer {
-  text-align: center;
-  background-color: #78610b;
+/*estilos titulos de pages*/
+.titulo-pages {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  color: #958d03; }
+
+/*estilo textos grales de textos iniciales*/
+.texto-inicio {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
   position: relative;
-  margin-bottom: -10px; }
+  margin: 10px 45px 10px 45px; }
+
+.texto {
+  margin: 0px 15px 0px 15px; }
+
+/*estilos de textos en negritas*/
+.bold {
+  font-weight: bold; }
+
+/*estilos margenes page redes*/
+.margenes-redes {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 15px; }
+
+/*estilos margenes imagenes page redes*/
+#margenes-img {
+  margin-bottom: 10px; }
+
+/*estilos articulos en page redes*/
+.articulo-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px 15px 0px 15px; }
+
+/*estilos iconos de page redes*/
+#redes {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; }
+
+/*estilos imagenes de page promo*/
+.completas {
+  width: 100%;
+  height: 100%; }
+
+/*posicion cards promo izq*/
+.posi {
+  display: flex;
+  flex-direction: column;
+  text-align: left; }
+
+/*posicion cards promo dcha*/
+.posi2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right; }
+
+/*estilos card page promo y mision*/
+.card {
+  margin: 10px;
+  background-color: #958d03; }
+
+/*estilo btn form*/
+.btn {
+  background-color: #958d03; }
+
+/*grid de la page contacto*/
+#grid {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "mapa formulario"; }
+
+.mapa {
+  grid-area: mapa;
+  padding-right: 10px; }
+
+.formulario {
+  grid-area: formulario; }
+
+/*grid de la page Redes*/
+#grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "card1"
+ "card2"
+ "card3"
+ "card4"
+ "card5"
+ "card6"
+ "card7"
+ "card8"; }
+
+.card1 {
+  grid-area: card1;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  margin: 10px; }
+
+.card2 {
+  grid-area: card2;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  margin: 10px; }
+
+.card3 {
+  grid-area: card3;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  margin: 10px; }
+
+.card4 {
+  grid-area: card4;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  margin: 10px; }
+
+.card5 {
+  grid-area: card5;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  margin: 10px; }
+
+.card6 {
+  grid-area: card6;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  margin: 10px; }
+
+.card7 {
+  grid-area: card7;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  margin: 10px; }
+
+.card8 {
+  grid-area: card8;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  margin: 10px; }
+
+/*media queries pages*/
+@media only screen and (max-width: 399px) {
+  .posi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  .posi2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  #grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "mapa"
+ "formulario"; }
+  iframe {
+    width: 100%; }
+  .formulario {
+    width: 100%; }
+  #grid1 {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "img1"
+ "img2"
+ "img3"
+ "img4"; }
+  #grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "card1"
+ "card2"
+ "card3"
+ "card4"
+ "card5"
+ "card6"
+ "card7"
+ "card8"; } }
+
+@media only screen and (min-width: 400px) {
+  #grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "mapa"
+ "formulario"; }
+  iframe {
+    width: 100%; }
+  .formulario {
+    width: 100%; }
+  #grid1 {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "img1"
+ "img2"
+ "img3"
+ "img4"; }
+  #grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "card1"
+ "card2"
+ "card3"
+ "card4"
+ "card5"
+ "card6"
+ "card7"
+ "card8"; } }
+
+@media only screen and (min-width: 600px) {
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "mapa"
+ "formulario"; }
+  #grid1 {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr  1fr;
+    grid-template-areas: "img1 img2"
+ "img3 img4"; }
+  #grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "card1 card2"
+ "card3 card4"
+ "card5 card6"
+ "card7 card8"; } }
+
+@media only screen and (min-width: 1020px) {
+  #grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "mapa formulario"; }
+  #grid1 {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "img1"
+ "img2"
+ "img3"
+ "img4"; }
+  #grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr  1fr;
+    grid-template-areas: "card1 card2 card3 card4 "
+ "card5 card6 card7 card8"; } }
 
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box; }
-
-  footer {
-    text-align: center;
-    background-color: #78610b;
-    position: relative;
-    margin-bottom: -10px; }
-  
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Smooch&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
-  
-  
-  header{
-      text-align: center;
-      align-content: center;
-      justify-content: center;
-  }
-  
-  /*tamano logo*/
-  .logo{
-    width: 80%;
-    height: 80%;
-  }
-  
-  /*estilos de textos en negritas*/
-  .bold{
-    font-weight: bold;
-  }
-  
-  #navbarNav{
-    position: relative;
-    margin-left: -30px;
-    font-weight: bold;
-  }
-  
-  .titulo-mision{
-    display: flex;  
-      flex-direction: row; 
-     align-content: center;
-     justify-content: center;
-     margin-bottom: 15px;
-     color: #958d03;
-  }
-  
-  /*estilos texto mision*/
-  .texto-4{
-    display: flex;  
-      flex-direction: row; 
-     align-content: center;
-     position: relative;
-    margin: 10px 45px 10px 45px;
-  }
-  
-  /*---- Estilo de las cards ----*/
-  #cards_landscape_wrap-2{
-    display: flex;  
-    flex-direction: row; 
-   align-content: center;
-   text-align: center;
-    align-content: center;
-    justify-content: center;
-
-      text-align: center;
-      align-content: center;
-      justify-content: center;
-      
-    }
-    #cards_landscape_wrap-2 .container{
-      padding-top: 80px; 
-      padding-bottom: 100px;
-    }
-    #cards_landscape_wrap-2 a{
-      text-decoration: none;
-      outline: none;
-    }
-    #cards_landscape_wrap-2 .card-flyer {
-      border-radius: 5px;
-    }
-    #cards_landscape_wrap-2 .card-flyer .image-box{
-      background: #958d03;
-      overflow: hidden;
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
-      border-radius: 5px;
-    }
-    #cards_landscape_wrap-2 .card-flyer .image-box img{
-      -webkit-transition:all .9s ease; 
-      -moz-transition:all .9s ease; 
-      -o-transition:all .9s ease;
-      -ms-transition:all .9s ease; 
-      width: 100%;
-      height: 200px;
-    }
-    #cards_landscape_wrap-2 .card-flyer:hover .image-box img{
-      opacity: 0.7;
-      -webkit-transform:scale(1.15);
-      -moz-transform:scale(1.15);
-      -ms-transform:scale(1.15);
-      -o-transform:scale(1.15);
-      transform:scale(1.15);
-    }
-    #cards_landscape_wrap-2 .card-flyer .text-box{
-      text-align: center;
-      align-content: center;
-      justify-content: center;
-    }
-    #cards_landscape_wrap-2 .card-flyer .text-box .text-container{
-      text-align: center;
-      align-content: center;
-      justify-content: center;
-      padding: 30px 18px;
-      
-    }
-    #cards_landscape_wrap-2 .card-flyer{
-      background: #958d03;
-      margin-top: 50px;
-      -webkit-transition: all 0.2s ease-in;
-      -moz-transition: all 0.2s ease-in;
-      -ms-transition: all 0.2s ease-in;
-      -o-transition: all 0.2s ease-in;
-      transition: all 0.2s ease-in;
-      box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
-    }
-    #cards_landscape_wrap-2 .card-flyer:hover{
-      background: #958d03;
-      box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
-      -webkit-transition: all 0.2s ease-in;
-      -moz-transition: all 0.2s ease-in;
-      -ms-transition: all 0.2s ease-in;
-      -o-transition: all 0.2s ease-in;
-      transition: all 0.2s ease-in;
-      margin-top: 50px;
-    }
-    #cards_landscape_wrap-2 .card-flyer .text-box p{
-      margin-top: 10px;
-      margin-bottom: 0px;
-      padding-bottom: 0px; 
-      font-size: 14px;
-      letter-spacing: 1px;
-      color: #000000;
-    }
-    #cards_landscape_wrap-2 .card-flyer .text-box h6{
-      text-align: center;
-      align-content: center;
-      justify-content: center;
-      margin-top: 0px;
-      margin-bottom: 4px; 
-      font-size: 18px;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-family: 'Roboto Black', sans-serif;
-      letter-spacing: 1px;
-      color: white;
-    }
-  
-    /*estilos titulo redes*/
-    .titulo-redes{
-      display: flex;  
-        flex-direction: row; 
-       align-content: center;
-       justify-content: center;
-       position: relative;
-       margin-bottom: -30px;
-       color: #958d03;
-    }
-
-    /*grid de la page Mision*/
-    /*
-  #grid1{
-    display: grid;
-    flex-direction: row;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:1fr;
-    grid-template-areas:
-    "img1"
-    "img2"
-    "img3"
-    "img4"
-  }
-  
-  
-
-  .img1{
-    grid-area: img1;
-    margin: 10px;
-    
-  }
-  
-  .img2{
-    grid-area: img2;
-    margin: 10px;
-  }
-  
-  .img3{
-    grid-area: img3;
-    margin: 10px;
-  }
-  
-  .img4{
-    grid-area: img4;
-    margin: 10px;
-  }
-
-    */
-  
-    /*estilos textos cards de page promo*/
-  .text-container{
-    text-align: center;
-      align-content: center;
-      justify-content: center;
-  }
-  
-  /*grid de la page Contacto*/
-  #grid{
-    margin: 15px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows:1fr;
-    grid-template-areas:
-    "mapa formulario"
-  }
-  
-  
-  .mapa{
-    grid-area: mapa;
-  }
-  
-  .formulario{
-  grid-area: formulario;
-  }
-  
-  
-  .texto{
-      margin: 0px 15px 0px 15px;
-  }
-  
-  .btn{
-    background-color: #958d03;
-  }
-
-    
-  .completas{
-    width: 100%;
-    height: 100%;
-  }
-    
-  
-.margenes-redes{
-  display: flex;  
-  flex-direction: row;
-  margin-bottom: 15px;
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  
-}
-
-#margenes-img{
-  margin-bottom: 10px;
-}
-  
-  /*grid de la page Redes*/
-  #grid2{
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr;
-    grid-template-areas:
-    "card1"
-    "card2"
-    "card3"
-    "card4"
-    "card5"
-    "card6"
-    "card7"
-    "card8"
-  }
-  
-  
-
-  .card1{
-    grid-area: card1;
-    border: 1.5px solid black;
-    margin: 10px;
-    
-  }
-  
-  .card2{
-    grid-area: card2;
-    border: 1.5px solid black;
-    margin: 10px;
-  }
-  
-  .card3{
-    grid-area: card3;
-    border: 1.5px solid black;
-    margin: 10px;
-  }
-  
-  .card4{
-    grid-area: card4;
-    border: 1.5px solid black;
-    margin: 10px;
-  }
-
-  .card5{
-    grid-area: card5;
-    border: 1.5px solid black;
-    margin: 10px;
-  }
-
-  .card6{
-    grid-area: card6;
-    border: 1.5px solid black;
-    margin: 10px;
-  }
-
-  .card7{
-    grid-area: card7;
-    border: 1.5px solid black;
-    margin: 10px;
-  }
-
-  .card8{
-    grid-area: card8;
-    border: 1.5px solid black;
-    margin: 10px;
-  }
-  
-  
-#gride{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
- .container{
-  margin: 0px 100px 0px 100px;
-  padding:0px 100px 0px 100px;
- }
-
-.posi{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-}
-
-.posi2{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
- 
-}
-
-
-  
-  .articulo2{
-    display: flex;  
-    flex-direction: row; 
-   justify-content: center;
-   margin: 0px 15px 0px 15px;
-  }
-  
-  #redes{
-    display: flex;  
-    flex-direction: row; 
-     justify-content: center;
-     align-items: center;
-     align-content: center;
-  }
-
-  .articulo2{
-    display: flex;  
-    flex-direction: row; 
-   justify-content: center;
-   margin-top: 30px;
-  }
-  
- 
-  
-      /*media queries page Contacto*/
-      @media only screen and (max-width: 479px) {
-        #grid{
-          margin: 15px;
-          display: grid;
-          grid-template-columns: 100%;
-          grid-template-rows:1fr 1fr;
-          grid-template-areas:
-          "mapa"
-          "formulario"
-        }
-        
-        
-        .mapa{
-          grid-area: mapa;
-          margin-right: 5px;
-        }
-        
-        .formulario{
-        grid-area: formulario;
-        }
-  
-      
-        iframe{
-          width: 100%;
-        }
-      }
-  
-      @media only screen and (min-width: 480px) {
-        #grid{
-          margin: 15px;
-          display: grid;
-          grid-template-columns: 100%;
-          grid-template-rows:1fr 1fr;
-          grid-template-areas:
-          "mapa"
-          "formulario"
-        }
-        
-        
-        .mapa{
-          grid-area: mapa;
-          margin-right: 5px;
-        }
-        
-        .formulario{
-        grid-area: formulario;
-        }
-  
-      
-        iframe{
-          width: 90%;
-        }
-      }
-  
-      
-  
-  @media only screen and (min-width: 649px) {
-    #grid{
-      margin: 15px;
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows:1fr 1fr;
-      grid-template-areas:
-      "mapa"
-      "formulario"
-    }
-    
-    
-    .mapa{
-      grid-area: mapa;
-      margin-right: 10px;
-    }
-    
-    .formulario{
-    grid-area: formulario;
-    }
-  
-    iframe{
-      width: 100%;
-    }
-      }
-
-
-.card{
-  margin: 10px;
-  background-color: #958d03;
-}
-
-      .misiones{
-  display: flex;  
-  flex-direction: row; 
-  justify-content: center;
-  
-  margin: 45px 25px 10px 45px;
-      }
-
-
-      @media screen and (min-width: 1200px) {
-        #grid{
-          margin: 15px;
-          display: grid;
-          grid-template-columns: 50% 50%;
-          grid-template-rows:1fr;
-          grid-template-areas:
-          "mapa formulario"
-        }
-        
-        
-        .mapa{
-          grid-area: mapa;
-          margin-right: 10px;
-        }
-        
-        .formulario{
-        grid-area: formulario;
-        }
-  
-        iframe{
-          width: 100%;
-          margin-right: 10px;
-        }
-      }
-  
-  
-  
-  
-  
-  /*media queries page Redes*/
-  @media only screen and (max-width: 399px) {
-    .posi{
-      display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-    }
-
-    .posi2{
-      display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-    }
-
-    #grid1{
-      display: grid;
-      flex-direction: row;
-      grid-template-columns: 1fr;
-      grid-template-rows:1fr 1fr 1fr 1fr;
-      grid-template-areas:
-      "img1"
-      "img2"
-      "img3"
-      "img4"
-    }
-
-    #grid2{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas:
-      "card1"
-      "card2"
-      "card3"
-      "card4"
-      "card5"
-      "card6"
-      "card7"
-      "card8"
-    }
-    
-  }
- 
-  @media only screen and (min-width: 400px) {
-    #grid1{
-      display: grid;
-      flex-direction: row;
-      margin-right: 20px;
-      grid-template-columns: 1fr;
-      grid-template-rows:1fr 1fr 1fr 1fr;
-      grid-template-areas:
-      "img1"
-      "img2"
-      "img3"
-      "img4"
-    }
-
-    #grid2{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas:
-      "card1"
-      "card2"
-      "card3"
-      "card4"
-      "card5"
-      "card6"
-      "card7"
-      "card8"
-    }
-    
-  }
-  
-  @media only screen and (min-width: 600px) {
-    #grid1
-    {
-      display: grid;
-      flex-direction: row;
-      grid-template-columns: 1fr 1fr ;
-      grid-template-rows:1fr  1fr;
-      grid-template-areas:
-      "img1 img2"
-      "img3 img4"
-    }
-
-    #grid2{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows:1fr 1fr 1fr 1fr;
-      grid-template-areas:
-      "card1 card2"
-      "card3 card4"
-      "card5 card6"
-      "card7 card8"
-    }
-    
-  }
-  
-  
-  
-      @media only screen and (min-width: 1025px) {
-        #grid1{
-          display: grid;
-          flex-direction: row;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-          grid-template-rows:1fr;
-          grid-template-areas:
-          "img1"
-          "img2"
-          "img3"
-          "img4"
-        }
-
-        #grid2
-          {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows:1fr  1fr;
-            grid-template-areas:
-            "card1 card2"
-            "card3 card4"
-            "card5 card6"
-            "card7 card8"
-            
-          }
-
-
-        
-          }
-      
-          
-        
-          @media screen and (min-width: 1400px) {
-            #grid1{
-              display: grid;
-              flex-direction: row;
-              grid-template-columns: 1fr 1fr 1fr 1fr;
-              grid-template-rows:1fr;
-              grid-template-areas:
-              "img1"
-              "img2"
-              "img3"
-              "img4"
-            }
-
-            #grid2{
-              display: grid;
-              grid-template-columns: 1fr 1fr 1fr 1fr;
-              grid-template-rows:1fr  1fr;
-              grid-template-areas:
-              "card1 card2 card3 card4 "
-              "card5 card6 card7 card8"
-            }
-          }
-
-          
-
-          

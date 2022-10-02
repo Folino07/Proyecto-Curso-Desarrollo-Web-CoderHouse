@@ -1,10 +1,13 @@
 @import './mixins';
 @import './variables';
 @import './body';
-@import './nav';
-@import './article';
+@import './header';
 @import './footer';
+@import './navegacion';
+@import './grids';
+@import './media-queries';
 
 *{
     @include reset;
 }
+

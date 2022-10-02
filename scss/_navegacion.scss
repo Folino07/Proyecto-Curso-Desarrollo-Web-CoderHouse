@@ -1,0 +1,94 @@
+/*estilos texto del index*/
+article{
+  margin: 15px;
+  color:map-get($colores , "negro" )
+}
+
+/*estilos titulos de pages*/
+.titulo-pages{
+    @include flex-row-center;
+     justify-content: center;
+     margin-bottom: 15px;
+     color: $color-principal;
+}
+
+/*estilo textos grales de textos iniciales*/
+.texto-inicio{
+    @include flex-row-center;
+    position: relative;
+    margin: 10px 45px 10px 45px;
+}
+
+
+  .texto{
+      margin: 0px 15px 0px 15px;
+  }
+
+  /*estilos de textos en negritas*/
+  .bold{
+    font-weight: bold;
+  }
+
+  /*estilos margenes page redes*/
+.margenes-redes{
+  @include flex-row-center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+/*estilos margenes imagenes page redes*/
+#margenes-img{
+  margin-bottom: $margen-popu;
+}
+
+/*estilos articulos en page redes*/
+.articulo-redes{
+  display: flex;  
+  flex-direction: row; 
+ justify-content: center;
+ margin: 0px 15px 0px 15px;
+}
+
+/*estilos iconos de page redes*/
+#redes{
+  @include flex-row-center;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: $margen-popu;
+}
+
+
+/*estilos imagenes de page promo*/
+.completas{
+    width: $porcentaje-full;
+    height: $porcentaje-full;
+}
+
+
+  /*posicion cards promo izq*/
+.posi{
+    @include flex-col;
+    text-align: left;
+  }
+  
+  /*posicion cards promo dcha*/
+  .posi2{
+    @include flex-col;
+    align-items: flex-end;
+    text-align: right;
+   
+  }
+
+
+  
+/*estilos card page promo y mision*/
+.card{
+  margin: $margen-popu;
+  background-color: $color-principal;
+}
+
+ /*estilo btn form*/
+ .btn{
+  background-color: $color-principal;
+}
