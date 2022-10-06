@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss ./scss/estilos.scss ./css/estilos.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+"watch-css": "nodemon -e scss -x \"npm run build-css\""
+
   },
   "repository": {
     "type": "git",
@@ -19,8 +20,8 @@
   },
   "homepage": "https://github.com/Folino07/Proyecto-Curso-Desarrollo-Web-CoderHouse#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.19"
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
   },
   "dependencies": {
     "abbrev": "^1.1.1",
