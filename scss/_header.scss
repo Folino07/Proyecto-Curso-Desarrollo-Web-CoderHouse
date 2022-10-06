@@ -14,8 +14,8 @@ header{
             li{
                 display: inline-block;
                 margin: 5px;
-                a{
-                    color: map-get($colores , "negro" );
+                .nav-link{
+                    color:map-get($colores , "negro" );
                     &:hover{
                         text-decoration: none;
                         border-radius: 70%;

@@ -106,9 +106,9 @@
     
   }
 
- 
 
   @media only screen and (min-width: 600px){
+   
     #grid{
       display: grid;
       grid-template-columns: 1fr;
@@ -142,7 +142,7 @@
   }
 
 
-      @media only screen and (min-width: 1020px) {
+      @media only screen and (min-width: 1020px){
         #grid{
           display: grid;
           grid-template-columns: 50% 50%;
@@ -172,10 +172,17 @@
           "card5 card6 card7 card8"
         }
 
+        #grid3{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows:1fr;
+          grid-template-areas:
+          "card1 card2 card3 card4 "
+        }
+
         
           }
       
-          
       
           
 

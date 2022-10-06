@@ -1,7 +1,7 @@
 /*estilos texto del index*/
-article{
+section{
   margin: 15px;
-  color:map-get($colores , "negro" )
+  color:map-get($colores , "negro" );
 }
 
 /*estilos titulos de pages*/
@@ -91,4 +91,9 @@ article{
  /*estilo btn form*/
  .btn{
   background-color: $color-principal;
+}
+
+.centrado{
+  justify-content: center;
+
 }

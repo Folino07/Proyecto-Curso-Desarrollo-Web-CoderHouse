@@ -1,4 +1,15 @@
+/*reseteo primero*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
 /*estilos grales del body*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
 body {
   background-image: url(../images/ama-pastel.jpg);
   background-position: center center;
@@ -20,21 +31,21 @@ header nav ul {
   header nav ul li {
     display: inline-block;
     margin: 5px; }
-    header nav ul li a {
+    header nav ul li .nav-link {
       color: black; }
-      header nav ul li a:hover {
+      header nav ul li .nav-link:hover {
         text-decoration: none;
         border-radius: 70%;
-        background-color: #4cce32; }
+        background-color: #F21616; }
 
 footer {
   text-align: center;
-  background-color: #4cce32;
+  background-color: #F21616;
   position: relative;
   margin-bottom: -15px; }
 
 /*estilos texto del index*/
-article {
+section {
   margin: 15px;
   color: black; }
 
@@ -45,7 +56,7 @@ article {
   align-content: center;
   justify-content: center;
   margin-bottom: 15px;
-  color: #958d03; }
+  color: #F26938; }
 
 /*estilo textos grales de textos iniciales*/
 .texto-inicio {
@@ -112,11 +123,14 @@ article {
 /*estilos card page promo y mision*/
 .card {
   margin: 10px;
-  background-color: #958d03; }
+  background-color: #F26938; }
 
 /*estilo btn form*/
 .btn {
-  background-color: #958d03; }
+  background-color: #F26938; }
+
+.centrado {
+  justify-content: center; }
 
 /*grid de la page contacto*/
 #grid {
@@ -194,6 +208,27 @@ article {
   border: 1.5px solid black;
   border-radius: 5px;
   margin: 10px; }
+
+#grid33 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "card01"
+ "card02"
+ "card03"
+ "card04"; }
+
+.card01 {
+  grid-area: card01; }
+
+.card02 {
+  grid-area: card02; }
+
+.card03 {
+  grid-area: card3; }
+
+.card04 {
+  grid-area: card4; }
 
 /*media queries pages*/
 @media only screen and (max-width: 399px) {
@@ -315,9 +350,9 @@ article {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr  1fr;
     grid-template-areas: "card1 card2 card3 card4 "
- "card5 card6 card7 card8"; } }
-
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box; }
+ "card5 card6 card7 card8"; }
+  #grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "card1 card2 card3 card4 "; } }

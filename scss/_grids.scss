@@ -35,8 +35,6 @@
     "card8"
   }
   
-  
-
   .card1{
     grid-area: card1;
     border: 1.5px solid map-get($colores , "negro" );
@@ -93,3 +91,4 @@
     border-radius: ($margen-popu/2);
     margin: $margen-popu;
   }
+
